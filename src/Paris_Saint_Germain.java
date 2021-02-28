@@ -19,7 +19,7 @@ public class Paris_Saint_Germain {
         this.tournament = tournament;
         this.stage = stage;
         this.stadium = stadium;
-        Manager = manager;
+        this.Manager = manager;
         this.localDateTime = localDateTime;
     }
 

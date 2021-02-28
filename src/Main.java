@@ -82,11 +82,26 @@ public class Main {
         LocalDate rreturnValue444 = dDate2.plusDays(1);
         System.out.println(" plusDays: " + rreturnValue444 + ", 5 мая МЮ Делает Камбэк в Парк дэ Пранс Со Счетом 4-2 и Проходит в Финал");
 
+        LocalDateTime d = LocalDateTime.of(2021, Month.MAY, 04,
+                15, 10, 45);
+        LocalDateTime d2 = d.minusDays(50);
+        System.out.println(d2);
+        d2 = d.minusDays(-50);
+        System.out.println("minusDays: " + d2 + " 50 дней назад МЮ выиграл Кубок АПЛ!");
+
+        LocalDateTime date = LocalDateTime.parse("2019-03-28T12:30:30");
+        System.out.println("minusYears: " + date.minusYears(2) + ", 2 года назад МЮ выиграл Кубок АПЛ и Кубок ЛЧ");
+
+        LocalDateTime uDate = LocalDateTime.parse("2020-03-28T12:30:30");
+        System.out.println("plusYears: " + uDate.plusYears(1) + ", Cпустя год, МЮ взял еще один кубок АПЛ! ");
+
         OffsetDateTime offSetDT3 = OffsetDateTime.of(2021, 3, 5, 20, 15, 45,
                 345875000, ZoneOffset.of("+07:00"));
         System.out.println("offsetDT3: " + offSetDT3 + ", Juventus Одерживает Домашнюю Победу Против Барселоны");
+
         int dayOfMonth = offSetDT3.getDayOfMonth();
         System.out.println("dayOfTheMonth: " + dayOfMonth + ", Интервью Андреа Пирло После Игры--- Мог бы Забить Больше, Ведь Нам Было Бы Проще Пройти В Финал В Ответной Игре ");
+
         int dayOfYear = offSetDT3.getDayOfYear();
         System.out.println("dayOfYear: " + dayOfYear + ", Интервью Куман После Игры -- Я удивлен Судейским Решением, Бонуччи Два Раза Сфолил У Себя В Штрафной Зоне" +
                 " На Рэмзи, Не Знаю Куда Судья Смотрел!");
@@ -95,6 +110,7 @@ public class Main {
         Instant instant6 = Instant.parse("2021-04-05T18:18:30.00Z");
         System.out.println("instant " + instant5 + ", Все готовятся к игре");
         System.out.println("instant " + instant6 + ", Barcelona Вырывает Победу В Концовке Матча и Проходит В Финал!");
+
         boolean value = instant5.isAfter(instant6);
         System.out.println("isAfter " + value + ", Интервью Кумана после игры -- Просто нет слов! ");
 
@@ -147,8 +163,8 @@ public class Main {
         boolean supported = thisYearMonth.isSupported(ChronoField.PROLEPTIC_MONTH);
         System.out.println("PROLEPTIC_MONTH Field is supported by YearMonth class: " + supported + ", Куман о травме Месси во время тренировки --" + " -Я опустошен! Но мы продолжим верить и биться!");
 
-        YearMonth date = YearMonth.of(2021,4);
-        System.out.println("lengthOfMonth: " + date.lengthOfMonth() + " Де Йонг о травме Месси-- " + "-- Все мы были немного огорчены таким событием, ведь он наш ключевой игрок");
+        YearMonth aDate = YearMonth.of(2021,4);
+        System.out.println("lengthOfMonth: " + aDate.lengthOfMonth() + " Де Йонг о травме Месси-- " + "-- Все мы были немного огорчены таким событием, ведь он наш ключевой игрок");
 
         YearMonth yearMonth = YearMonth.parse("2021-04");
         YearMonth result = yearMonth.minusMonths(1);
