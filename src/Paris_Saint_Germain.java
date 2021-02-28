@@ -3,101 +3,69 @@ import java.time.LocalDateTime;
 import java.time.Period;
 
 public class Paris_Saint_Germain {
-    private String клуб;
-    private String страна;
-    private String был_основан;
-    private String турнир;
-    private String стадия;
-    private String стадион;
-    private String Менеджер;
+    private String club;
+    private String country;
+    private String was_founded;
+    private String tournament;
+    private String stage;
+    private String stadium;
+    private String Manager;
     private LocalDateTime localDateTime;
 
-    public Paris_Saint_Germain(String клуб, String страна, String был_основан, String турнир, String стадия, String стадион, String менеджер, LocalDateTime localDateTime) {
-        this.клуб = клуб;
-        this.страна = страна;
-        this.был_основан = был_основан;
-        this.турнир = турнир;
-        this.стадия = стадия;
-        this.стадион = стадион;
-        this.Менеджер = менеджер;
-        this.localDateTime = localDateTime;
-
-    }
-
-    public String getКлуб() {
-        return клуб;
-    }
-
-    public void setКлуб(String клуб) {
-        this.клуб = клуб;
-    }
-
-    public String getСтрана() {
-        return страна;
-    }
-
-    public void setСтрана(String страна) {
-        this.страна = страна;
-    }
-
-    public String getБыл_основан() {
-        return был_основан;
-    }
-
-    public void setБыл_основан(String был_основан) {
-        this.был_основан = был_основан;
-    }
-
-    public String getТурнир() {
-        return турнир;
-    }
-
-    public void setТурнир(String турнир) {
-        this.турнир = турнир;
-    }
-
-    public String getСтадия() {
-        return стадия;
-    }
-
-    public void setСтадия(String стадия) {
-        this.стадия = стадия;
-    }
-
-    public String getСтадион() {
-        return стадион;
-    }
-
-    public void setСтадион(String стадион) {
-        this.стадион = стадион;
-    }
-
-    public String getМенеджер() {
-        return Менеджер;
-    }
-
-    public void setМенеджер(String менеджер) {
-        Менеджер = менеджер;
-    }
-
-    public LocalDateTime getLocalDateTime() {
-        return localDateTime;
-    }
-
-    public void setLocalDateTime(LocalDateTime localDateTime) {
+    public Paris_Saint_Germain(String club, String country, String was_founded, String tournament, String stage, String stadium, String manager, LocalDateTime localDateTime) {
+        this.club = club;
+        this.country = country;
+        this.was_founded = was_founded;
+        this.tournament = tournament;
+        this.stage = stage;
+        this.stadium = stadium;
+        Manager = manager;
         this.localDateTime = localDateTime;
     }
 
     @Override
     public String toString() {
-        return
-                "клуб={'" + клуб + '\'' +
-                ", страна='" + страна + '\'' +
-                ", был_основан='" + был_основан + '\'' +
-                ", турнир='" + турнир + '\'' +
-                ", стадион='" + стадион + '\'' +
-                ", Менеджер='" + Менеджер + '\'' +
+        return "Paris_Saint_Germain{" +
+                "club='" + club + '\'' +
+                ", country='" + country + '\'' +
+                ", was_founded='" + was_founded + '\'' +
+                ", tournament='" + tournament + '\'' +
+                ", stage='" + stage + '\'' +
+                ", stadium='" + stadium + '\'' +
+                ", Manager='" + Manager + '\'' +
                 ", localDateTime=" + localDateTime +
                 '}';
+    }
+
+    public String getClub() {
+        return club;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public String getWas_founded() {
+        return was_founded;
+    }
+
+    public String getTournament() {
+        return tournament;
+    }
+
+    public String getStage() {
+        return stage;
+    }
+
+    public String getStadium() {
+        return stadium;
+    }
+
+    public String getManager() {
+        return Manager;
+    }
+
+    public LocalDateTime getLocalDateTime() {
+        return localDateTime;
     }
 }
