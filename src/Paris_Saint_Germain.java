@@ -2,7 +2,7 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.Period;
 
-public class Пари_Сен_Жермен {
+public class Paris_Saint_Germain {
     private String клуб;
     private String страна;
     private String был_основан;
@@ -12,7 +12,7 @@ public class Пари_Сен_Жермен {
     private String Менеджер;
     private LocalDateTime localDateTime;
 
-    public Пари_Сен_Жермен(String клуб, String страна, String был_основан, String турнир, String стадия, String стадион, String менеджер, LocalDateTime localDateTime) {
+    public Paris_Saint_Germain(String клуб, String страна, String был_основан, String турнир, String стадия, String стадион, String менеджер, LocalDateTime localDateTime) {
         this.клуб = клуб;
         this.страна = страна;
         this.был_основан = был_основан;

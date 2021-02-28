@@ -11,11 +11,11 @@ public class Main {
         LocalDateTime localDateTime3time = date4.atTime(18,30,30,500);
         LocalDateTime date1 = date4.atTime(LocalTime.from(localDateTime3time));
         System.out.println(date1 + ". В Процессе Жеребьевки Мы Выяснили, Кто С Кем Будет Играть --: ");
-        System.out.println( " Манчестер Юнайтед VS ПСЖ," + " Барселона VS Ювентус");
+        System.out.println( " Манчестер Юнайтед VS ПСЖ," + " Barcelona VS Juventus");
 
-        LinkedList<Манчестер_Юнайтед> clubs = new LinkedList<>();
+        LinkedList<Manchester_United> clubs = new LinkedList<>();
 
-        clubs.add(new Манчестер_Юнайтед(
+        clubs.add(new Manchester_United(
                 " Манчестер Юнайтед",
                 " Англия",
                 " 1878",
@@ -27,9 +27,9 @@ public class Main {
         clubs.forEach(System.out::println);
 
 
-        LinkedList<Пари_Сен_Жермен> clubs5 = new LinkedList<>();
-        clubs5.add(new Пари_Сен_Жермен(
-                " Пари_Сен_Жермен",
+        LinkedList<Paris_Saint_Germain> clubs5 = new LinkedList<>();
+        clubs5.add(new Paris_Saint_Germain(
+                " Paris_Saint_Germain",
                 " Франция",
                 " 1888",
                 " Лига Чемпионов",
@@ -40,23 +40,23 @@ public class Main {
         System.out.println("Id: " + zoneId.getId());
         clubs5.forEach(System.out::println);
 
-        LinkedList<Ювентус> clubs3 = new LinkedList<>();
-        clubs3.add(new Ювентус(
-                " Ювентус",
+        LinkedList<Juventus> clubs3 = new LinkedList<>();
+        clubs3.add(new Juventus(
+                " Juventus",
                 " Италия",
                 " 1905",
                 " Лига Чемпионов",
                 "1/2 финала",
-                " Ювентус",
+                " Juventus",
                 " Андреа Пирло",
                 LocalDateTime.of(1905, Month.SEPTEMBER, 6, 21, 56, 4)));
         clubs3.forEach(System.out::println);
 
 
 
-        LinkedList<Барселона> clubs4 = new LinkedList<>();
-        clubs4.add(new Барселона(
-                " Барселона",
+        LinkedList<Barcelona> clubs4 = new LinkedList<>();
+        clubs4.add(new Barcelona(
+                " Barcelona",
                 " Spain",
                 " 1899",
                 " Лига Чемпионов",
@@ -83,13 +83,13 @@ public class Main {
 
         OffsetDateTime offsetDT3 = OffsetDateTime.of(2021, 3, 5, 20, 15, 45,
                 345875000, ZoneOffset.of("+07:00"));
-        System.out.println(offsetDT3 + " Ювентус Одерживает Домашнюю Победу Против Барселоны");
+        System.out.println(offsetDT3 + " Juventus Одерживает Домашнюю Победу Против Барселоны");
         System.out.println(" Интервью Андреа Пирло После Игры--- Мог бы Забить Больше, Ведь Нам Было Бы Проще Пройти В Финал В Ответной Игре ");
         System.out.println(" Интервью Куман После Игры -- Я удивлен Судейским Решением, Бонуччи Два Раза Сфолил У Себя В Штрафной Зоне" +
                 " На Рэмзи, Не Знаю Куда Судья Смотрел!");
 
         Instant instant6 = Instant.parse("2021-04-05T18:18:30.00Z");
-        System.out.println(instant6 + " Барселона Вырывает Победу В Концовке Матча и Проходит В Финал!");
+        System.out.println(instant6 + " Barcelona Вырывает Победу В Концовке Матча и Проходит В Финал!");
 
         ZoneId zoneeId = ZoneId.of("Europe/Madrid");
         System.out.println(" Финал Будет Проходить В Мадриде " + zoneeId.getId());
