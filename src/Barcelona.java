@@ -1,6 +1,6 @@
 import java.time.LocalDateTime;
 
-public class Barcelona extends Paris_Saint_Germain {
+public class Barcelona extends ParisSaintGermain {
 
 
     public Barcelona(String club, String country, String was_founded, String tournament, String stage, String stadium, String manager, LocalDateTime localDateTime) {

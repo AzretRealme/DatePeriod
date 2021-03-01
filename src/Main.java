@@ -14,9 +14,9 @@ public class Main {
         System.out.println(date1 + ". В Процессе Жеребьевки Мы Выяснили, Кто С Кем Будет Играть --: ");
         System.out.println( " Манчестер Юнайтед VS ПСЖ," + " Barcelona VS Juventus");
 
-        LinkedList<Manchester_United> clubs = new LinkedList<>();
+        LinkedList<ManchesterUnited> clubs = new LinkedList<>();
 
-        clubs.add(new Manchester_United(
+        clubs.add(new ManchesterUnited(
                 " Манчестер Юнайтед",
                 " Англия",
                 " 1878",
@@ -28,9 +28,9 @@ public class Main {
         clubs.forEach(System.out::println);
 
 
-        LinkedList<Paris_Saint_Germain> clubs5 = new LinkedList<>();
-        clubs5.add(new Paris_Saint_Germain(
-                " Paris_Saint_Germain",
+        LinkedList<ParisSaintGermain> clubs5 = new LinkedList<>();
+        clubs5.add(new ParisSaintGermain(
+                " ParisSaintGermain",
                 " Франция",
                 " 1888",
                 " Лига Чемпионов",

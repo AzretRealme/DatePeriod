@@ -2,7 +2,7 @@ import java.time.Duration;
 import java.time.LocalDateTime;
 import java.time.Period;
 
-public class Paris_Saint_Germain {
+public class ParisSaintGermain {
     private String club;
     private String country;
     private String was_founded;
@@ -12,7 +12,7 @@ public class Paris_Saint_Germain {
     private String Manager;
     private LocalDateTime localDateTime;
 
-    public Paris_Saint_Germain(String club, String country, String was_founded, String tournament, String stage, String stadium, String manager, LocalDateTime localDateTime) {
+    public ParisSaintGermain(String club, String country, String was_founded, String tournament, String stage, String stadium, String manager, LocalDateTime localDateTime) {
         this.club = club;
         this.country = country;
         this.was_founded = was_founded;
@@ -25,7 +25,7 @@ public class Paris_Saint_Germain {
 
     @Override
     public String toString() {
-        return "Paris_Saint_Germain{" +
+        return "ParisSaintGermain{" +
                 "club='" + club + '\'' +
                 ", country='" + country + '\'' +
                 ", was_founded='" + was_founded + '\'' +
